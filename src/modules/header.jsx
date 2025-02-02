@@ -4,7 +4,7 @@ function Header()
     <>
         <div class="card">
             <div class="card-body">
-                Welcome to Inspector
+                React Examples - This is a place where I will be adding all the examples of ReactJS.
             </div>
         </div>
     </>
