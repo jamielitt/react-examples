@@ -1,33 +1,30 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
+import Header from './modules/header.jsx'
+import Menu from './modules/menu.jsx'
 
 function App() {
   const [count, setCount] = useState(0)
 
+  // Here we need to decide what conditional panel is displayed in the "Content" section on the page
+  // switch on state
+  // case 0:
+  //   <FirstPanel />
+  // case 1:
+  //   <SecondPanel />
   return (
     <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
+      <Header />
+      <div class="container text-center">
+        <div class="row align-items-start">
+          <div class="col">
+            <Menu />
+          </div>
+          <div class="col">
+            Content
+          </div>
+        </div>
       </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
     </>
   )
 }
