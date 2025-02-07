@@ -20,7 +20,7 @@ function Menu()
             <div class="col">
                 <div id="menu" class="btn-group-vertical">
                     <button class="btn btn-primary" panel="1" onClick={handleSetSelectedPanelNumber}>Two way binding</button>
-                    <button class="btn btn-primary" panel="2" onClick={handleSetSelectedPanelNumber}>Panel 2</button>
+                    <button class="btn btn-primary" panel="2" onClick={handleSetSelectedPanelNumber}>Form Submission</button>
                 </div>
             </div>
             <div class="col">
