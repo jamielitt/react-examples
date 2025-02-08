@@ -1,20 +1,11 @@
-import React, { useState } from 'react'
-
-function TwoWayBinding()
+function TwoWayBinding(props)
 {
-    const [input, setInput] = useState('')
-
-    function setInputHandler(event)
-    {
-        setInput(event.target.value);
-    }
-
     return (
         <>
         <div>This is a two-way binding example</div>
         <div>
-            <input type="text" onChange={setInputHandler}></input>
-            <p> You have entered {input}</p>
+            <input type="text" onChange={props.inputHandler}></input>
+            <p> You have entered {props.currentString}</p>
         </div>
         </>
     )
