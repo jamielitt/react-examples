@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 
-function FormSubmit()
+function FormSubmit({twoWayBindingInformation})
 {
     const [firstName, setFirstName] = useState('');
     const [lastName, setLastName] = useState('');
@@ -38,6 +38,7 @@ function FormSubmit()
         <div>The form you have submitted is: </div>
         <div>First Name: {firstName}</div>
         <div>Last Name: {lastName}</div>
+        <div>Something special too, state passed in from Two Way Binding is {twoWayBindingInformation}</div>
         </>
     )
 }
