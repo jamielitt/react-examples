@@ -15,18 +15,16 @@ function Menu()
 
    return (
     <>
+        <div class="col-4 bg-light card">
         <p>Selected menu item is {selectedPanel}</p>
-        <div class="row">
-            <div class="col">
-                <div id="menu" class="btn-group-vertical">
-                    <button class="btn btn-primary" panel="1" onClick={handleSetSelectedPanelNumber}>Two way binding</button>
-                    <button class="btn btn-primary" panel="2" onClick={handleSetSelectedPanelNumber}>Form Submission</button>
-                </div>
+            <div id="menu" class="btn-group-vertical">
+                <button class={"btn btn-primary " +  (selectedPanel == '1' ? 'active' : '')} panel="1" onClick={handleSetSelectedPanelNumber}>Two way binding</button>
+                <button class={"btn btn-primary " +  (selectedPanel == '2' ? 'active' : '')} panel="2" onClick={handleSetSelectedPanelNumber}>Form Submission</button>
             </div>
-            <div class="col">
-                <div id="panel">
-                    <Panel selectedPanel={selectedPanel}/>
-                </div>
+        </div>
+        <div class="col-4 bg-light card">
+            <div id="panel">
+                <Panel selectedPanel={selectedPanel}/>
             </div>
         </div>
     </>
