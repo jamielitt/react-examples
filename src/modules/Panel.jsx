@@ -1,14 +1,14 @@
-import Panel1 from './Panel1.jsx'
-import Panel2 from './Panel2.jsx'
+import TwoWayBinding from './TwoWayBinding.jsx'
+import FormSubmit from './FormSubmit.jsx'
 
 function Panel({selectedPanel})
 {
     switch (selectedPanel)
     {
         case "1":
-            return (<Panel1 />)
+            return (<TwoWayBinding />)
         case "2": 
-            return (<Panel2 />)
+            return (<FormSubmit />)
     }
 
     window.alert('Did not select panel: selectedPanel is ' + selectedPanel)

@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 
-function Panel1()
+function TwoWayBinding()
 {
     const [input, setInput] = useState('')
 
@@ -20,4 +20,4 @@ function Panel1()
     )
 }
 
-export default Panel1
+export default TwoWayBinding
