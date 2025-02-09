@@ -20,6 +20,7 @@ function Menu()
             <div id="menu" class="btn-group-vertical">
                 <button class={"btn btn-primary " +  (selectedPanel == '1' ? 'active' : '')} panel="1" onClick={handleSetSelectedPanelNumber}>Two way binding</button>
                 <button class={"btn btn-primary " +  (selectedPanel == '2' ? 'active' : '')} panel="2" onClick={handleSetSelectedPanelNumber}>Form Submission</button>
+                <button class={"btn btn-primary " +  (selectedPanel == '3' ? 'active' : '')} panel="3" onClick={handleSetSelectedPanelNumber}>Conditional Rendering</button>
             </div>
         </div>
         <div class="col-4 bg-light card">
