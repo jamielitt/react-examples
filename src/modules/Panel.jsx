@@ -1,6 +1,7 @@
 import TwoWayBinding from './TwoWayBinding.jsx'
 import FormSubmit from './FormSubmit.jsx'
 import ConditionalRenderings from './ConditionalRenderings.jsx'
+import ListRendering from './ListRendering.jsx'
 
 import { useState } from 'react'
 
@@ -21,6 +22,8 @@ function Panel({selectedPanel})
             return (<FormSubmit twoWayBindingInformation={input}/>)
         case "3":
             return (<ConditionalRenderings />)
+        case "4":
+            return (<ListRendering />)
     }
 
     window.alert('Did not select panel: selectedPanel is ' + selectedPanel)
