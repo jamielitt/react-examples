@@ -54,6 +54,11 @@ function ListRendering()
             <span>This is the list we currently have in our array</span>
             <ul>
                 {items.map( (item) => (
+                    /* By setting the items key to the id, we ensure that React can keep track of the items */
+                    /* and only re-render the items that have changed */
+                    /* This is important for performance reasons */
+                    /* If key is not set, the items will be re-rendered every time the state changes */
+                    /* This can cause performance issues if the list is large */
                     <li key={item.id}>
                         <span>{item.name} 
                             <button onClick={(e) => handleRemoveItem(item.id)}>Remove</button>
